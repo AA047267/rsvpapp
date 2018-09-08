@@ -13,7 +13,7 @@ TEXT2=os.environ.get('TEXT2', "Garage RSVP")
 LOGO=os.environ.get('LOGO', "https://raw.githubusercontent.com/cloudyuga/rsvpapp/master/static/cloudyuga.png")
 COMPANY=os.environ.get('COMPANY', "CloudYuga Technology Pvt. Ltd.")
 
-MONGODB_HOST=os.environ.get('MONGODB_HOST', 'localhost')
+MONGODB_HOST=os.environ.get('MONGODB_HOST', '127.0.0.1')
 client = MongoClient(MONGODB_HOST, 27017)
 db = client.rsvpdata
 
